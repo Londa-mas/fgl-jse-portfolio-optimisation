@@ -9,7 +9,7 @@ The core innovation is a **'Graph-Aware' optimiser** that utilises idiosyncratic
 
 ---
 
-# 2. Project Structure
+## 2. Project Structure
 The repository is organised to follow the logical progression of the research, from data acquisition to systemic stress testing.
 
 ### Core Files
