@@ -1,0 +1,10 @@
+Required dependencies:
+- numpy
+- pandas
+- yfinance
+- scikit-learn
+- networkx
+- cvxpy
+- matplotlib
+- seaborn
+- scipy
