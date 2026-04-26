@@ -13,7 +13,7 @@ The core innovation is a **'Graph-Aware' optimiser** that utilises idiosyncratic
 The repository is organised to follow the logical progression of the research, from data acquisition to systemic stress testing.
 
 ### Core Files
-* **`FGL_JSE_Analysis.ipynb`**: The primary Jupyter Notebook containing the full end-to-end pipeline. It is documented with functional objectives and theoretical links to the underlying FGL paper.
+* **`Composite_JSE_FGL_Extension_Code.ipynb`**: The primary Jupyter Notebook containing the full end-to-end pipeline. It is documented with functional objectives and theoretical links to the underlying FGL paper.
 * **`requirements.txt`**: A list of all Python dependencies (e.g., `cvxpy`, `scikit-learn`, `networkx`) required to replicate the environment.
 * **`README.md`**: This file, providing project context and structural guidance.
 
