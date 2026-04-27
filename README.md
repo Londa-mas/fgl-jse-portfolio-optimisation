@@ -28,3 +28,10 @@ The repository is organised to follow the logical progression of the research, f
 * **Network Stability:** Identified that JSE idiosyncratic risk is highly integrated, with major financial and resource tickers acting as primary systemic bridges.
 * **Capital Preservation:** The Graph-Aware strategy maintained a significantly lower Max Drawdown (-1.10%) compared to an equal-weighted benchmark during the 2023-2024 window.
 * **Systemic Robustness:** In a simulated -5 sigma 'Black Swan' event, the model preserved **21.62% more capital** than a naive allocation by successfully de-weighting central network hubs.
+
+---
+
+## Authors
+* Maphoka Mahlomola
+* Olonda Masuku
+* Moketla Motlatso
