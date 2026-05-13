@@ -22,7 +22,7 @@ While the original FGL framework effectively identifies idiosyncratic risk, it t
 
 We hypothesize that certain assets act as 'idiosyncratic hubs' - structural anchors in the market that facilitate volatility contagion. To mitigate this, we augment the Global Minimum Variance (GMV) objective with a linear penalty based on Eigenvector Centrality ($c_i$):
 
-$$\min_{w} \quad w^T \hat{\Sigma}_{FGL} w + \lambda \sum_{i=1}^{p} c_i w_i$$
+$$\min_{w} \left( w^T \hat{\Sigma}_{FGL} w + \lambda \sum_{i=1}^{p} c_i w_i \right) \$$
 
 Subject to: $$\sum_{i=1}^{p} w_i = 1, \quad w_i \geq 0$$
 * $\hat{\Sigma}_{FGL}$: The FGL covariance estimator reconstructed from purged residuals.
