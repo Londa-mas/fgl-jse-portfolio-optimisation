@@ -124,7 +124,7 @@ The global parameters are defined at the start of the notebook. The default conf
 
 ### **Step 3: Sequential Execution**
 
-Open `TR-FGL Codescript - Extension and Replication.ipynb` and execute the cells in order:
+Open `TR-FGL Codescript - Replication and Extension.ipynb` and execute the cells in order:
 
 1. **Data Ingestion:** Running the first code block will sync live JSE data via `yfinance`.
 2. **Section B (Replication):** This block performs the factor decomposition and calculates the full precision matrix. It will print a 'Verification Summary' to the console.
