@@ -151,6 +151,11 @@ To ensure the repository is well-commented and runnable under all conditions:
 
 ---
 
+## **6. Reference**
+Lee, T.-H., & Seregina, E. (2023). Optimal Portfolio Using Factor Graphical Lasso. *Journal of Financial Econometrics*, 22(3). doi:10.1093/jjfinec/nbad011
+
+---
+
 ## **6. Contributors**
 
 * Maphoka Mahlomola
