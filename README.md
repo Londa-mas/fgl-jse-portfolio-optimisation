@@ -86,8 +86,9 @@ pip install -r requirements.txt
 
 1. **Data Synchronisation:** The script automatically retrieves daily closing prices for 76 JSE tickers.
 2. **Liquidity & Density Filtering:** Assets are screened for 'stale' prices (zero-return days) to prevent numerical instability during matrix inversion.
-3. **Rolling-Window Engine:** The backtest executes a recursive loop (90-day training/10-day testing). This ensures strict temporal separation, meaning parameters are never estimated using future data.
-4. **Solver Stability:** The `CVXPY` optimizer is wrapped in exception-handling logic. If a specific window's covariance estimation fails to converge, the system defaults to a stable 1/N allocation to ensure the backtest remains runnable and continuous.
+3. **Static Replication Baseline:** The foundational FGL replication utilizes the full available sample ($n=124$) to establish a high-dimensional baseline ($p/n \approx 0.61$) and verify the structural decomposition of the JSE risk landscape.
+4. **Rolling-Window Engine:** For the extension and backtesting, the script executes a recursive loop using a 90-day training / 10-day testing split. This ensures strict temporal separation and allows the model to adapt to the evolving network topology of the JSE.
+5. **Solver Stability:** The `CVXPY` optimizer is wrapped in exception-handling logic. If a specific window's covariance estimation fails to converge, the system defaults to a stable 1/N allocation to ensure the backtest remains runnable and continuous.
 
 ### **C. How to Verify the Output**
 
@@ -118,9 +119,8 @@ pip install -r requirements.txt
 
 The global parameters are defined at the start of the notebook. The default configuration is tuned to replicate the high-dimensional stress conditions ($p \approx n$) analyzed in Lee & Seregina (2023):
 
-* **Universe:** 76 JSE-listed tickers (Adjusted Closing Prices).
-* **Training Window:** 90 Trading Days.
-* **Rebalancing Step:** 10 Trading Days (Recursive).
+* **Replication Regime (Section B):** Analyzes the full $n=124$ day sample to validate the "Low-Rank + Sparse" inversion logic against classical benchmarks.
+* **Backtesting Regime (Section C):** Implements a recursive 90-day training window with a 10-day rebalancing step to evaluate the out-of-sample performance of the TR-FGL extension.
 
 ### **Step 3: Sequential Execution**
 
