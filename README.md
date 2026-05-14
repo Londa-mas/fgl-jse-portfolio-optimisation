@@ -46,7 +46,7 @@ The primary requirement for FGL is the extraction of the full precision matrix (
 
 * **Mechanism:** The script utilizes Principal Component Analysis (PCA) to estimate the factor structure. Following the paper’s methodology, we determine the number of factors ($k$) using an explained variance threshold (configured to $>80\%$).
 * **Verification:** The precision matrix of the idiosyncratic residuals is generated using `GraphicalLassoCV`. This ensures that the L1-penalty ($\alpha$) is selected via cross-validation, satisfying the paper’s requirement for a sparse, well-conditioned estimator in high dimensions.
-* **Code Location:** `Section B: Replication of the Factor Graphical Lasso Framework`.
+* **Code Location:** `Section B: Replication of the Factor Graphical Lasso (FGL) Framework`.
 
 ### **B. The Benchmark: Unpenalised Global Minimum Variance (GMV)**
 
