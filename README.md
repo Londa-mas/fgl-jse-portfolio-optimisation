@@ -1,4 +1,4 @@
-# **Topological-Robust Factor Graphical Lasso (TR-FGL)**
+# **Topologically Regularised Factor Graphical Lasso (TR-FGL)**
 
 ## **Replication and Extension of Lee & Seregina (2023)**
 
@@ -6,7 +6,7 @@
 
 ## **1. Theoretical Framework**
 
-This project is centered on the replication and extension of the Factor Graphical Lasso (FGL) framework introduced by **Lee & Seregina (2023)** in their paper *'Optimal Portfolio Using Factor Graphical Lasso.'* The research addresses the fundamental failure of the sample covariance matrix in high-dimensional settings ($p \approx n$), where estimation error leads to extreme, unstable portfolio weights. In the context of the Johannesburg Stock Exchange (JSE), where sector concentration and systemic factor dominance are high, this model provides a mathematically rigorous alternative to traditional Mean-Variance optimization.
+This project is centered on the replication and extension of the Factor Graphical Lasso (FGL) framework introduced by Lee & Seregina (2023) in their paper *'Optimal Portfolio Using Factor Graphical Lasso.'* The research addresses the fundamental failure of the sample covariance matrix in high-dimensional settings ($p \approx n$), where estimation error leads to extreme, unstable portfolio weights. In the context of the Johannesburg Stock Exchange (JSE), where sector concentration and systemic factor dominance are high, this model provides a mathematically rigorous alternative to traditional Mean-Variance optimization.
 
 ### **A. Foundational Replication: The FGL Framework**
 
@@ -18,7 +18,7 @@ Following Lee & Seregina (2023), we move away from the assumption that the preci
 
 ### **B. Proposed Extension: Centrality-Regularized GMV**
 
-While the original FGL framework effectively identifies idiosyncratic risk, it treats all idiosyncratic connections with a uniform entry-wise penalty. Our extension, the Topological-Robust FGL (TR-FGL), introduces structural risk regularization into the optimization.
+While the original FGL framework effectively identifies idiosyncratic risk, it treats all idiosyncratic connections with a uniform entry-wise penalty. Our extension, the Topologically Regularised FGL (TR-FGL), introduces structural risk regularization into the optimization.
 
 We hypothesize that certain assets act as 'idiosyncratic hubs' - structural anchors in the market that facilitate volatility contagion. To mitigate this, we augment the Global Minimum Variance (GMV) objective with a linear penalty based on Eigenvector Centrality ($c_i$):
 
@@ -129,7 +129,7 @@ Open `TR-FGL Codescript - Replication and Extension.ipynb` and execute the cells
 1. **Data Ingestion:** Running the first code block will sync live JSE data via `yfinance`.
 2. **Section B (Replication):** This block performs the factor decomposition and calculates the full precision matrix. It will print a 'Verification Summary' to the console.
 3. **Comparative Visualization:** This cell generates the replication figure. It plots the cumulative returns of the unpenalised GMV vs. standard FGL, providing the performance-related proof requested in the project feedback.
-4. **Section C (Extension):** This block executes the Topological-Robust (TR-FGL) model, calculating Eigenvector Centrality and solving the constrained optimization problem via `CVXPY`.
+4. **Section C (Extension):** This block executes the Topologically Regularised (TR-FGL) model, calculating Eigenvector Centrality and solving the constrained optimization problem via `CVXPY`.
 
 ### **Step 4: Interpreting Results**
 
