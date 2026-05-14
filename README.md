@@ -156,7 +156,7 @@ Lee, T.-H., & Seregina, E. (2023). Optimal Portfolio Using Factor Graphical Lass
 
 ---
 
-## **6. Contributors**
+## **7. Contributors**
 
 * Maphoka Mahlomola
 * Olonda Masuku
